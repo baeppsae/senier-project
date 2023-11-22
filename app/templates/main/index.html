@@ -1,0 +1,56 @@
+<!DOCTYPEhtml>
+<html lang="en"><head><metahttp-equiv="Content-Type"content="text/html; charset=UTF-8">
+     
+    <meta http-equiv="X-UA-Compatible"content="IE=edge">
+    <meta name="viewport"content="width=device-width, initial-scale=1">
+    <meta name="description"content="">
+    <meta name="author"content="">
+ 
+    <title>2018305010 김민재</title>
+ 
+    <link href="/static/css/bootstrap.min.css"rel="stylesheet">
+    <link href="/static/css/starter-template.css"rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/day11.css">
+ 
+  </head>
+ 
+  <body>
+ 
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div id="navbar"class="collapse navbar-collapse">
+        </div>
+      </div>
+    </nav>
+ 
+    <div class="container">
+ 
+      <div class="starter-template">
+        <h1>딥러닝 학습을 위한 이미지 데이터셋 제공 프로그램</h1> 
+      </div>
+
+      <form method="POST" action="/crawl" class="mt-4">
+        <div class="form-group">
+            <label for="keyword">크롤링 키워드:</label>
+            <input type="text" name="keyword" id="keyword" class="form-control" required>
+        </div> 
+        <div class="form-group">
+          <label for="folder_name">폴더명:</label>
+          <input type="text" name="folder_name" id="folder_name" class="form-control" required>
+        </div> 
+        <div class="form-group">
+            <label for="num_images">이미지 개수:</label>
+            <input type="number" name="num_images" id="num_images" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label>이미지 크기</label><br>
+          <label for="width">Width:</label><br>
+          <input type="number" name="width" id="width" class="form-control" required><br>
+          <label for="height">Height:</label><br>
+          <input type="number" name="height" id="height" class="form-control" required>
+      </div>
+        <button type="submit" class="btn btn-primary">OK</button>
+    </form>
+ 
+    </div>
+</body></html>
